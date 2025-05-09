@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Wear - Nykaa Fashion</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="nykaa.html">
+                    <img src="https://images-static.nykaa.com/fashion-images/pub/media/nykaa-logo.svg" alt="Nykaa Fashion" height="40">
+                </a>
+                <div class="d-flex align-items-center">
+                    <div class="search-box me-3">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search for products...">
+                    </div>
+                    <div class="header-icons">
+                        <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-user"></i>
+                            <span>Account</span>
+                        </a>
+                        <a href="#" class="icon-link">
+                            <i class="fas fa-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                        <a href="cart.html" class="icon-link cart-link">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Cart</span>
+                            <span class="cart-count badge bg-danger rounded-pill">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container py-4">
+        <!-- Page Title and Filters -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="page-title">Indian Wear</h1>
+            <div class="filters-container">
+                <select class="form-select me-2" id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="kurta">Kurtas & Kurta Sets</option>
+                    <option value="saree">Sarees</option>
+                    <option value="lehenga">Lehengas</option>
+                    <option value="ethnic">Ethnic Dresses</option>
+                    <option value="bottom">Ethnic Bottoms</option>
+                </select>
+                <select class="form-select me-2" id="priceFilter">
+                    <option value="all">All Prices</option>
+                    <option value="0-1000">Under ₹1000</option>
+                    <option value="1000-2000">₹1000 - ₹2000</option>
+                    <option value="2000-5000">₹2000 - ₹5000</option>
+                    <option value="5000+">Above ₹5000</option>
+                </select>
+                <select class="form-select" id="sortFilter">
+                    <option value="default">Recommended</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Rating</option>
+                    <option value="popular">Most Popular</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="brand-cards" id="productsGrid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="indianwear-products.js"></script>
+</body>
+</html> 
